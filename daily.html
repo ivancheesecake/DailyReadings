@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Read the Bible</title>
+	</head>
+	<body>
+		<h1 style="font-family: Century Gothic;">Leading you to the bread of life... &lt;3</h1>
+		
+	</body>
+
+	<script type="text/javascript">
+
+		var d = new Date();
+
+		day = d.getDate().toString();
+
+		if(day.length == 1)
+			day = "0"+day;
+
+		month = (d.getMonth()+1).toString();
+		if(month.length == 1)
+			month = "0"+month;
+
+		year = d.getFullYear().toString().substr(2,4);
+
+	
+		console.log("http://www.usccb.org/bible/readings/"+month+""+day+""+year+".cfm")
+		window.location = "http://www.usccb.org/bible/readings/"+month+""+day+""+year+".cfm";
+
+	</script>
+</html>
